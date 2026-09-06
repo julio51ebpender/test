@@ -10,3 +10,5 @@ Others are selling this, who never put in any effort to figure it out themselves
 Enjoy while it lasts.
 
 This is a shitty old copy of the PoC code that is NOT UPDATED, If you're smart you'll figure it out.
+
+Press F8 when respawning
