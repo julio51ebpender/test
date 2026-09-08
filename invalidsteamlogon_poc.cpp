@@ -1,14 +1,8 @@
-// PoC: send "InvalidSteamLogon" through Source2EngineToClient001::CmdKeyValues.
-// For local dedicated server testing and responsible disclosure.
-//
 // Connect to a local server, inject, then press F8 to start a burst.
 // Dispatch runs on the game thread; the net channel / KV path isn't thread-safe.
 //
 // Build from a VS x64 developer prompt with MinHook.h and MinHook.x64.lib available:
 //   cl /LD /EHsc /O2 invalidsteamlogon_poc.cpp /link /OUT:invalidsteamlogon_poc.dll minhook.x64.lib
-//
-// Expected server log (server.dll:0x1801ec765):
-//   "Invalid Steam Logon Delayed: Kicking client [U:1:%d] %s"
 
 #include <windows.h>
 #include <cstdint>
